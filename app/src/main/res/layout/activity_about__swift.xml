@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient2"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ts42" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:fontFamily="casual"
+                android:text="@string/para1"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_margin="12dp"
+                android:textSize="20sp"
+                android:fontFamily="casual"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/para2" />
+            <TextView
+                android:layout_margin="12dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="casual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/para3" />
+            <TextView
+                android:layout_margin="12dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="casual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/para4" />
+            <TextView
+                android:layout_margin="12dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="casual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="ca-app-pub-4566109119621113/2101367237">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
